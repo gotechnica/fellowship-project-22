@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>art</title>
+</head>
+
+<body>
+    <main>
+        <a class="home" href="index.html">C</a>
+        <div class="tabContainerLarge">
+
+            <a href="resume.html">
+                <div class="tab" id="leftTab">
+                    resume </div>
+            </a>
+            <a href="graphicDesign.html">
+                <div class="tab" id="middleTab">
+                    graphic design
+                </div>
+            </a>
+            <a href="art.html">
+                <div class="tab" id="rightTab">
+                    art</div>
+            </a>
+
+        </div>
+        <div class="webPageLarge">
+            <div class="searchBarContainer" id="fixedHeader">
+                <button class="navButtons" type="button" placeholder="back" id="backButton" onclick="history.back()">
+                    < <button class="navButtons" type="button" placeholder="front" onclick="history.forward()">>
+                </button>
+            </div>
+            <h2 id="artPageHeader">my art</h2>
+            <h3 class="artTypeHeader">paintings</h3>
+            <hr class="artHeaderLine">
+            <h4 class="info">click each piece for more info</h4>
+
+            <div class="imageGrid">
+
+                <div class="gridItem" onclick="openPage('flutist',this)">
+                    <image class=" imageGridItem" src="artForWebsite/flute.jpg">
+                    </image>
+                    <div class="artTitleText">flutist</div>
+                </div>
+
+                <div class="gridItem" onclick="openPage('lucidity',this)">
+                    <image class="imageGridItem" src="artForWebsite/afterprom.jpg"></image>
+                    <div class="artTitleText">lucidity</div>
+                </div>
+
+                <div class="gridItem" onclick="openPage('utopia',this)">
+                    <image class="imageGridItem" src="artForWebsite/utopia.jpg"></image>
+                    <div class="artTitleText">utopia</div>
+                </div>
+            </div>
+
+            <div id="flutist">
+                <h2 class="singleArtHeader">flutist</h2>
+                <hr class="artHeaderLine">
+                <image class="singleImage" src="artForWebsite/flute.jpg">
+                    <div class="artDescriptionContainer">
+                        <p class="artDescription">
+                            <b>title:</b> flutist
+                            <br>
+                            <b>date:</b> 2022
+                            <br>
+                            <b>medium:</b> acrylic
+                            <br>
+                            <br>
+                            This piece was inspired by my experience as a flutist. My teacher often encouraged
+                            me to
+                            project the "calm blue of the ocean" or play sharply like scraping a knife across
+                            burnt
+                            toast.
+                        </p>
+                    </div>
+                    <div class="artFooter">foot</div>
+            </div>
+
+            <div id="lucidity">
+                <h2 class="singleArtHeader">lucidity</h2>
+                <hr class="artHeaderLine">
+                <image class="singleImage" src="artForWebsite/afterprom.jpg">
+                    <div class="artDescriptionContainer">
+                        <p class="artDescription">
+                            <b>title:</b> lucidity
+                            <br>
+                            <b>date:</b> 2021
+                            <br>
+                            <b>medium:</b> acrylic
+                            <br>
+                            <br>
+                            um
+                        </p>
+                    </div>
+                    <div class="artFooter">foot</div>
+            </div>
+
+            <div id="utopia">
+                <h2 class="singleArtHeader">utopia</h2>
+                <hr class="artHeaderLine">
+                <image class="singleImage" src="artForWebsite/utopia.jpg">
+                    <div class="artDescriptionContainer">
+                        <p class="artDescription">
+                            <b>title:</b> utopia
+                            <br>
+                            <b>date:</b> 2021
+                            <br>
+                            <b>medium:</b> oil
+                            <br>
+                            <br>
+                            um
+                        </p>
+                    </div>
+                    <div class="artFooter">foot</div>
+            </div>
+
+            <script>function openPage(pageName, element) {
+                    // Hide all elements with class="imageGrid" by default */
+                    var i, imageGrid, pageHeader, backButton;
+                    imageGrid = document.getElementsByClassName("imageGrid");
+                    dynamicGrid = document.getElementsByClassName("dynamicGrid");
+                    artTypeHeader = document.getElementsByClassName("artTypeHeader");
+                    info = document.getElementsByClassName("info");
+                    for (i = 0; i < imageGrid.length; i++) {
+                        imageGrid[i].style.display = "none";
+                    }
+                    for (i = 0; i < dynamicGrid.length; i++) {
+                        dynamicGrid[i].style.display = "none";
+                    }
+                    for (i = 0; i < artTypeHeader.length; i++) {
+                        artTypeHeader[i].style.display = "none";
+                    }
+                    for (i = 0; i < info.length; i++) {
+                        info[i].style.display = "none";
+                    }
+                    pageHeader = document.getElementById("artPageHeader");
+                    backButton = document.getElementById("backButton");
+                    pageHeader.style.display = "none";
+                    backButton.onclick = function () { window.location = 'art.html'; }
+                    // Show the specific tab content
+                    document.getElementById(pageName).style.display = "block";
+                }
+
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();</script>
+
+            <h3 class="artTypeHeader">digital</h2>
+                <hr class="artHeaderLine">
+
+                <div class="artTypeButtonContainer">
+                    <button class="artTypeButton" type="button" onclick="showType('portrait',this)">portraits</button>
+                    <button class=" artTypeButton" type="button" onclick="showType('nft',this)">NFT art</button>
+                    <button class="artTypeButton" type="button" onclick="showType('design',this)">designs</button>
+                </div>
+                <script>function showType(type, element) {
+                        var portrait, nft, design, shown;
+                        portrait = document.getElementsByClassName("portrait");
+                        nft = document.getElementsByClassName("nft");
+                        design = document.getElementsByClassName("design");
+                        for (i = 0; i < portrait.length; i++) {
+                            portrait[i].style.display = "none";
+                        }
+                        for (i = 0; i < nft.length; i++) {
+                            nft[i].style.display = "none";
+                        }
+                        for (i = 0; i < design.length; i++) {
+                            design[i].style.display = "none";
+                        }
+                        shown = document.getElementsByClassName(type);
+                        for (i = 0; i < shown.length; i++) {
+                            shown[i].style.display = "block";
+                        }
+
+                        console.log(type + "clicked");
+                    }</script>
+
+                <div class="dynamicGrid">
+                    <div class="dynamicGridColumn">
+                        <image class="portrait" src="DigitalArtPortfolio/GreenBoyHead.JPG">
+                        </image>
+                        <image class="portrait" src="DigitalArtPortfolio/HalfBodyDress.jpg">
+                        </image>
+                        <image class="nft" src="artForWebsite/chinatown.png"></image>
+                        <image class="design" src="DigitalArtPortfolio/KoiFish.jpg"></image>
+                        <image class="portrait" src="DigitalArtPortfolio/PromDressBust.JPG">
+                        </image>
+                    </div>
+                    <div class="dynamicGridColumn">
+                        <image class="nft" src="artForWebsite/backBay.png"></image>
+                        <image class="portrait" src="DigitalArtPortfolio/Rumination.PNG">
+                        </image>
+                        <image class="portrait" src="DigitalArtPortfolio/LightStudyBoy.jpg">
+                        </image>
+                        <image class="design" src="DigitalArtPortfolio/PumpkinPieRecipe.jpg">
+                        </image>
+                        <image class="portrait" src="DigitalArtPortfolio/YellowBoyHead.JPG">
+                        </image>
+                    </div>
+
+                    <div class="dynamicGridColumn">
+                        <image class="portrait" src="DigitalArtPortfolio/IllinoisBoy.JPG">
+                        </image>
+                        <image class="design" src="DigitalArtPortfolio/Taiyaki.jpg"></image>
+                        <image class="portrait" src="DigitalArtPortfolio/PromDressPlants.JPG">
+                        </image>
+                        <image class="portrait" src="DigitalArtPortfolio/GoldenGirl.jpg">
+                        </image>
+                        <image class="nft" src="artForWebsite/somerville.png"></image>
+                    </div>
+                </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

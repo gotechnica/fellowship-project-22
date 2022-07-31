@@ -1,0 +1,364 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: whitesmoke;
+}
+
+#homeC {
+    color: #0d3c5b;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5em;
+}
+
+.aboutBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4vw;
+}
+
+#aboutMe {
+    color: #0d3c5b;
+}
+
+.aboutPhoto {
+    width: 20%;
+    object-fit: cover;
+    border-radius: 80%;
+    border-color: #CBD2D8;
+    border-width: 4px;
+    border-style: solid;
+}
+
+
+.name {
+    font-size: 3vw;
+    color: #0d3c5b;
+}
+
+
+.navButtons {
+    border: none;
+    text-decoration: none;
+    height: 100%;
+
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    background-color: whitesmoke;
+    color: #365475;
+}
+
+#homenavButtons {
+    background-color: #365475;
+    color: #CBD2D8;
+}
+
+
+.tab {
+    background-color: #0d3c5b;
+    text-align: center;
+    padding: 0.5em 1em;
+    margin: 1em;
+    float: left;
+    color: whitesmoke;
+    font-size: 1.5vw;
+}
+
+
+a {
+    text-decoration: none;
+    color: #365475;
+}
+
+p {
+    color: #CBD2D8;
+}
+
+
+.line {
+    border: 0.075em solid #CBD2D8;
+}
+
+.name {
+    margin-top: 10%;
+    margin-left: 8%;
+}
+
+.typedName {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid transparent;
+    /* The typewriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .2em;
+    /* Adjust as needed */
+
+
+    text-align: left;
+    color: #CBD2D8;
+    font-size: 3.5em;
+
+    font-family: "Montserrat" bold;
+}
+
+#firstName {
+    animation:
+        typing 2s steps(12, end),
+        blink-caret 0.5s step-end 1;
+}
+
+#lastName {
+    animation-delay: 10s;
+    animation:
+        delay 10s,
+        typing 3s steps(6, end),
+        blink-caret 0.5s step-end 1;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+.quickButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quickButton {
+    border-style: none;
+    background-color: whitesmoke;
+}
+
+
+.logo {
+    width: 5vw;
+    height: 5vw;
+    margin: 5vw;
+}
+
+
+h2 {
+    margin: 1em;
+    font-size: 3em;
+    color: #365475;
+}
+
+.imageGrid {
+    grid-template-columns: auto auto auto;
+    gap: 0.1em;
+}
+
+.gridItem {
+    float: left;
+    width: 30%;
+    margin-left: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.imageGridItem {
+    width: 100%;
+    float: left;
+}
+
+
+.artTitleText:hover .imageGridItem {
+    opacity: 0.6;
+}
+
+.imageGridItem:hover {
+    opacity: 0.6;
+}
+
+.gridItem:hover .artTitleText {
+    opacity: 1;
+}
+
+.imageGridItem:hover .artTitleText {
+    opacity: 1;
+}
+
+.artTitleText:hover {
+    opacity: 1;
+}
+
+.artTitleText {
+    opacity: 0;
+    width: 100%;
+    float: left;
+    background-color: #365475;
+    color: white;
+    font-size: 1.3em;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    margin-top: -65%;
+    margin-left: 37%;
+}
+
+#flutist {
+    display: none;
+}
+
+#lucidity {
+    display: none;
+}
+
+#utopia {
+    display: none;
+}
+
+.singleImage {
+    width: 43%;
+    margin-left: 5%;
+    float: left;
+}
+
+.singleArtHeader {
+    margin-left: 43.5%;
+    font-size: 4vw;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    color: #365475;
+}
+
+.artHeaderLine {
+    border: 0.1em solid #365475;
+    width: 30%;
+    margin-bottom: 2%;
+}
+
+.artDescriptionContainer {
+    background-color: #365475;
+    width: 43%;
+    float: right;
+    margin-right: 5%;
+    margin-top: 0%;
+}
+
+.artDescription {
+    margin: 1em;
+    font-size: 1.5vw;
+    line-height: 2;
+}
+
+.artFooter {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    color: whitesmoke;
+    height: 100%;
+    margin-top: 60%;
+}
+
+.home {
+    font-size: 3em;
+}
+
+.darkParagraph {
+    color: #365475;
+    margin-left: 5%;
+}
+
+h3 {
+    color: #365475;
+    margin-left: 3.5%;
+    font-size: 2em;
+}
+
+.artTypeHeader {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.dynamicGrid {
+    width: 100%;
+    margin-left: 2.5%;
+}
+
+.dynamicGridColumn {
+    width: 30%;
+    float: left;
+    margin-right: 2.5%;
+}
+
+.info {
+    text-align: center;
+    margin: auto;
+    color: #365475;
+    margin-top: -1%;
+    margin-bottom: 1%;
+}
+
+.artTypeButtonContainer {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.artTypeButton {
+    margin-right: 1%;
+    background-color: #365475;
+    border-style: none;
+    color: #CBD2D8;
+    font-size: 1.3vw;
+    padding: 1%;
+    font-family: inherit;
+}
+
+.artTypeButton:hover {
+    background-color: #CBD2D8;
+    color: #365475;
+}
+
+.portrait {
+    width: 100%;
+    margin-bottom: 2.5%;
+    display: block;
+}
+
+.nft {
+    width: 100%;
+    margin-bottom: 2.5%;
+    display: block;
+}
+
+.design {
+    width: 100%;
+    margin-bottom: 2.5%;
+    display: block;
+}
