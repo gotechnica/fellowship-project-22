@@ -3,10 +3,14 @@
 
 body {
     background-color: whitesmoke;
+    font-family: "Poppins", sans-serif;
 }
 
-#homeC {
+.home {
     color: #0d3c5b;
+    font-size: 5vw;
+    float: left;
+    margin-right: 58vw;
 }
 
 .header {
@@ -17,20 +21,43 @@ body {
 
 .aboutBox {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
     font-size: 1.4vw;
+    margin-left: 5em;
+    margin-top: 3vw;
 }
 
 #aboutMe {
     color: #0d3c5b;
+    margin-left: 0.5em;
+    margin-top: -1.5em;
 }
 
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+}
+
+h1 {
+    font-size: 6.5vw;
+    color: #0d3c5b;
+    letter-spacing: 0.3rem;
+    font-weight: 900;
+    /*webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background: radial-gradient(whitesmoke, #0d3c5b);*/
+}
+
+.highlighted {
+    color: #05568d;
+    font-weight: 600;
+}
+
+
 .aboutPhoto {
-    width: 20%;
-    object-fit: cover;
-    border-radius: 80%;
+    width: 15%;
+    height: 100%;
     border-color: #CBD2D8;
     border-width: 4px;
     border-style: solid;
@@ -65,11 +92,14 @@ body {
 .tab {
     background-color: #0d3c5b;
     text-align: center;
+    width: auto;
     padding: 0.5em 1em;
     margin: 1em;
     float: left;
     color: whitesmoke;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
+
+    letter-spacing: 0.2rem;
 }
 
 
@@ -92,87 +122,48 @@ p {
     margin-left: 8%;
 }
 
-.typedName {
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid transparent;
-    /* The typewriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .2em;
-    /* Adjust as needed */
-
-
-    text-align: left;
-    color: #CBD2D8;
-    font-size: 3.5em;
-
-    font-family: "Montserrat" bold;
-}
-
-#firstName {
-    animation:
-        typing 2s steps(12, end),
-        blink-caret 0.5s step-end 1;
-}
-
-#lastName {
-    animation-delay: 10s;
-    animation:
-        delay 10s,
-        typing 3s steps(6, end),
-        blink-caret 0.5s step-end 1;
-}
-
-/* The typing effect */
-@keyframes typing {
-    from {
-        width: 0%
-    }
-
-    to {
-        width: 100%
-    }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: white;
-    }
+.greetBar {
+    margin-left: 24.5vw;
+    background-color: #0d3c5b;
+    font-size: 1.4vw;
+    padding: 0.5vw 1vw 0vw 1vw;
+    width: fit-content;
+    color: whitesmoke;
+    border-radius: 30% 30% 0% 0%;
 }
 
 .quickButtonsContainer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
+    margin-left: 24.5vw;
 }
 
 .quickButton {
     border-style: none;
-    background-color: whitesmoke;
+    background-color: #0d3c5b;
+}
+
+.quickButtonsBar {
+    background-color: #0d3c5b;
+    padding: 0vw 1vw 0vw 1vw;
 }
 
 
 .logo {
-    width: 5vw;
-    height: 5vw;
-    margin: 5vw;
+    width: 3vw;
+    height: 3vw;
+    margin: 1vw 3vw 1vw 3vw;
+    background-color: #0d3c5b;
 }
 
 
 h2 {
-    margin: 1em;
-    font-size: 3em;
-    color: #365475;
+    margin: 0.5em;
+    font-size: 4.5vw;
+    color: #0d3c5b;
+    display: flex;
+    justify-content: center;
 }
 
 .imageGrid {
@@ -214,10 +205,11 @@ h2 {
 }
 
 .artTitleText {
+
     opacity: 0;
     width: 100%;
     float: left;
-    background-color: #365475;
+    background-color: #0d3c5b;
     color: white;
     font-size: 1.3em;
     width: 30%;
@@ -246,21 +238,18 @@ h2 {
 }
 
 .singleArtHeader {
-    margin-left: 43.5%;
     font-size: 4vw;
-    margin-bottom: 1%;
-    margin-top: 2%;
-    color: #365475;
+    color: #0d3c5b;
 }
 
 .artHeaderLine {
-    border: 0.1em solid #365475;
+    border: 0.1em solid #0d3c5b;
     width: 30%;
     margin-bottom: 2%;
 }
 
 .artDescriptionContainer {
-    background-color: #365475;
+    background-color: #0d3c5b;
     width: 43%;
     float: right;
     margin-right: 5%;
@@ -268,6 +257,7 @@ h2 {
 }
 
 .artDescription {
+
     margin: 1em;
     font-size: 1.5vw;
     line-height: 2;
@@ -284,19 +274,18 @@ h2 {
     margin-top: 60%;
 }
 
-.home {
-    font-size: 3em;
-}
-
 .darkParagraph {
-    color: #365475;
+
+    color: #0d3c5b;
     margin-left: 5%;
 }
 
 h3 {
-    color: #365475;
-    margin-left: 3.5%;
-    font-size: 2em;
+
+    color: #0d3c5b;
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
 }
 
 .artTypeHeader {
@@ -317,11 +306,13 @@ h3 {
 }
 
 .info {
+
     text-align: center;
     margin: auto;
     color: #365475;
     margin-top: -1%;
     margin-bottom: 1%;
+    font-size: 1vw;
 }
 
 .artTypeButtonContainer {
@@ -331,18 +322,18 @@ h3 {
 }
 
 .artTypeButton {
+
     margin-right: 1%;
-    background-color: #365475;
+    background-color: #0d3c5b;
     border-style: none;
     color: #CBD2D8;
     font-size: 1.3vw;
     padding: 1%;
-    font-family: inherit;
 }
 
 .artTypeButton:hover {
     background-color: #CBD2D8;
-    color: #365475;
+    color: #0d3c5b;
 }
 
 .portrait {
@@ -361,4 +352,24 @@ h3 {
     width: 100%;
     margin-bottom: 2.5%;
     display: block;
+}
+
+h4 {
+    color: #0d3c5b;
+    font-size: 1vw;
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.contactBox {
+    display: flex;
+    padding: 1vw 10vw;
+    border-radius: 0%;
+    border-style: solid;
+    border-color: #0d3c5b;
+    border-width: 0.5vw;
+    font-size: 1vw;
 }

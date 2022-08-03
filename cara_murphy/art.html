@@ -12,30 +12,25 @@
 
 <body>
     <main>
-        <a class="home" href="index.html">C</a>
-        <div class="tabContainerLarge">
 
+        <div class="header">
+            <a class="home" href="index.html">C</a>
             <a href="resume.html">
-                <div class="tab" id="leftTab">
-                    resume </div>
+                <div class="tab">
+                    photography </div>
             </a>
             <a href="graphicDesign.html">
-                <div class="tab" id="middleTab">
-                    graphic design
+                <div class="tab">
+                    ui/ux
                 </div>
             </a>
             <a href="art.html">
-                <div class="tab" id="rightTab">
+                <div class="tab">
                     art</div>
             </a>
-
         </div>
         <div class="webPageLarge">
-            <div class="searchBarContainer" id="fixedHeader">
-                <button class="navButtons" type="button" placeholder="back" id="backButton" onclick="history.back()">
-                    < <button class="navButtons" type="button" placeholder="front" onclick="history.forward()">>
-                </button>
-            </div>
+
             <h2 id="artPageHeader">my art</h2>
             <h3 class="artTypeHeader">paintings</h3>
             <hr class="artHeaderLine">
@@ -86,7 +81,7 @@
             <div id="lucidity">
                 <h2 class="singleArtHeader">lucidity</h2>
                 <hr class="artHeaderLine">
-                <image class="singleImage" src="artForWebsite/afterprom.jpg">
+                <image class="singleImage" src="cara_murphy/artForWebsite/afterprom.jpg">
                     <div class="artDescriptionContainer">
                         <p class="artDescription">
                             <b>title:</b> lucidity
@@ -127,6 +122,7 @@
                     imageGrid = document.getElementsByClassName("imageGrid");
                     dynamicGrid = document.getElementsByClassName("dynamicGrid");
                     artTypeHeader = document.getElementsByClassName("artTypeHeader");
+                    artTypeButton = document.getElementsByClassName("artTypeButton");
                     info = document.getElementsByClassName("info");
                     for (i = 0; i < imageGrid.length; i++) {
                         imageGrid[i].style.display = "none";
@@ -140,10 +136,13 @@
                     for (i = 0; i < info.length; i++) {
                         info[i].style.display = "none";
                     }
+                    for (i = 0; i < artTypeButton.length; i++) {
+                        artTypeButton[i].style.display = "none";
+                    }
                     pageHeader = document.getElementById("artPageHeader");
-                    backButton = document.getElementById("backButton");
                     pageHeader.style.display = "none";
-                    backButton.onclick = function () { window.location = 'art.html'; }
+
+
                     // Show the specific tab content
                     document.getElementById(pageName).style.display = "block";
                 }
