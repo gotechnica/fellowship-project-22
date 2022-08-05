@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: whitesmoke;
@@ -14,6 +17,7 @@ body {
 }
 
 .header {
+    font-family: "Times New Roman";
     display: flex;
     justify-content: flex-end;
     margin-right: 5em;
@@ -31,12 +35,13 @@ body {
     color: #0d3c5b;
     margin-left: 0.5em;
     margin-top: -1.5em;
+    margin-left: 1vw;
 }
 
 .aboutText {
     display: flex;
     flex-direction: column;
-    margin-left: 2em;
+    margin-left: 0vw;
 }
 
 h1 {
@@ -56,11 +61,9 @@ h1 {
 
 
 .aboutPhoto {
-    width: 15%;
+    width: 30%;
     height: 100%;
-    border-color: #CBD2D8;
-    border-width: 4px;
-    border-style: solid;
+    border-style: none;
 }
 
 
@@ -123,7 +126,7 @@ p {
 }
 
 .greetBar {
-    margin-left: 24.5vw;
+    margin-left: 1vw;
     background-color: #0d3c5b;
     font-size: 1.4vw;
     padding: 0.5vw 1vw 0vw 1vw;
@@ -136,12 +139,13 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    margin-left: 24.5vw;
+    margin-left: 1vw;
 }
 
 .quickButton {
     border-style: none;
     background-color: #0d3c5b;
+    color: white;
 }
 
 .quickButtonsBar {
@@ -157,19 +161,24 @@ p {
     background-color: #0d3c5b;
 }
 
-
 h2 {
-    margin: 0.5em;
+    margin: 0.1 vw;
     font-size: 4.5vw;
     color: #0d3c5b;
     display: flex;
     justify-content: center;
+    font-family: "Times New Roman";
 }
 
 .imageGrid {
     grid-template-columns: auto auto auto;
-    gap: 0.1em;
+    gap: 0.5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: center;
 }
+
 
 .gridItem {
     float: left;
@@ -205,13 +214,14 @@ h2 {
 }
 
 .artTitleText {
-
+    font-family: "Times New Roman";
+    padding: 0.5vw;
     opacity: 0;
     width: 100%;
     float: left;
     background-color: #0d3c5b;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.3vw;
     width: 30%;
     text-align: center;
     position: relative;
@@ -295,21 +305,24 @@ h3 {
 }
 
 .dynamicGrid {
-    width: 100%;
-    margin-left: 2.5%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: center;
 }
 
 .dynamicGridColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     width: 30%;
-    float: left;
-    margin-right: 2.5%;
+    margin-left: 3vw;
 }
 
 .info {
-
+    font-family: 'Times New Roman';
     text-align: center;
     margin: auto;
-    color: #365475;
     margin-top: -1%;
     margin-bottom: 1%;
     font-size: 1vw;
@@ -318,17 +331,19 @@ h3 {
 .artTypeButtonContainer {
     text-align: center;
     margin: auto;
-    margin-bottom: 2%;
+    margin-bottom: 2vw;
 }
 
 .artTypeButton {
-
-    margin-right: 1%;
+    width: auto;
+    font-family: 'Times New Roman';
+    margin-left: 1vw;
+    margin-right: 1vw;
     background-color: #0d3c5b;
     border-style: none;
-    color: #CBD2D8;
-    font-size: 1.3vw;
-    padding: 1%;
+    color: white;
+    font-size: 1.4vw;
+    padding: 1vw;
 }
 
 .artTypeButton:hover {
@@ -338,19 +353,19 @@ h3 {
 
 .portrait {
     width: 100%;
-    margin-bottom: 2.5%;
+    margin-bottom: 3vw;
     display: block;
 }
 
 .nft {
     width: 100%;
-    margin-bottom: 2.5%;
+    margin-bottom: 3vw;
     display: block;
 }
 
 .design {
     width: 100%;
-    margin-bottom: 2.5%;
+    margin-bottom: 3vw;
     display: block;
 }
 
