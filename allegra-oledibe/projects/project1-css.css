@@ -1,0 +1,76 @@
+body {
+    background-image: url("/allegra-oledibe/images/sage-green-background.jpg");
+  }
+
+  #container img{
+    border: 2px solid moccasin;
+    margin: 5px;
+    padding: 5px;
+    width:400px;
+    height: auto;
+  
+  }
+
+  .boxes{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .header img{
+    width: 1500px;
+    height: 300px;
+    border-bottom: 10px dotted #654321;
+  }
+
+  .tabs .first {
+    border: 1px solid #654321;
+    margin: 3px;
+    color: moccasin;
+    background-color: #f5b477;
+    }
+    
+    .tabs .second {
+      border: 1px solid #654321;
+      margin: 3px;
+      color: moccasin;
+      background-color: #f5b477;
+    }
+    
+    .tabs{
+        background-color: transparent;
+        float: right;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .fa{
+        color: white;
+      }
+
+      h2 {
+        color: bisque;
+      }
+
+      .desriptions{
+        border: 2px solid moccasin;
+        height: auto;
+        padding: 5px;
+      }
+
+      p {
+        color: #654321;
+        font-size: larger;
+        font-family: 'Abril Fatface', cursive;
+      }
+
+      h3{
+        color: bisque;
+      }
+
+      ul li {
+        color: #654321;
+        font-size: large;
+        font-family: 'Abril Fatface', cursive;
+      }
+

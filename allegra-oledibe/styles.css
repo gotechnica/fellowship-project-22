@@ -1,0 +1,139 @@
+
+​
+a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: #6e85b7;
+  border-bottom: 2px solid transparent;
+  /*the below two lines will make any transitions/changes slow and smooth---*/
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
+​
+a:hover { /*--- when a link is hovered, it will change color and border smoothly ---*/
+  color: #000;
+  border-bottom: 2px solid #6e85b7;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    width: 75%;
+    color: moccasin;
+    background-color: white;
+    border: 5px;
+ display: flex;
+ justify-content: center;
+ border-style: solid;
+ margin-top: 10px;
+}
+
+
+body {
+  background-image: url("images/sage-green-background.jpg");
+}
+
+.section{
+  width: 500px;
+  height: auto;
+  font-size: larger;
+  color: brown;
+}
+
+
+.projects-grid{
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-image-wrapper img{
+  border: 2px solid moccasin;
+  margin: 5px;
+  padding: 5px;
+  width:300px;
+  height: 50%;
+
+}
+
+.projects-grid i{
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.project-image-wrapper:hover i {
+  visibility: visible; opacity: 1;
+} 
+
+.header img{
+  width: 1500px;
+  height: 300px;
+  border-bottom: 10px dotted #654321;
+}
+
+#container img {
+  height: 100%;
+  width: 100%;
+}
+
+.tabs{
+  background-color: transparent;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+}
+.tabs .first {
+border: 1px solid #654321;
+margin: 3px;
+color: moccasin;
+font-weight: 700;
+background-color: #f5b477;
+}
+
+.tabs .second {
+  border: 1px solid #654321;
+  margin: 3px;
+  color: moccasin;
+  font-weight: 700;
+  background-color: #f5b477;
+}
+
+#container:hover{
+  box-shadow:20px 20px 10px rgba(0, 100, 0, 0.377);
+}
+
+
+h2{
+  margin-bottom: 10px;
+  font-family: 'Dancing Script', cursive;
+  background-color: #f5b477;
+  font-size: 50px;
+}
+
+/* typewritter effect snippet by Geoff Fraham on www.css-tricks.com */
+h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(198, 132, 9); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.fa{
+  color: white;
+}
