@@ -16,41 +16,6 @@ a:hover { /*--- when a link is hovered, it will change color and border smoothly
 }
 
 
-/*--- styling each section (boxes inside the container) 
-.section {
-  z-index: 0;
-  border: 1px solid #777;
-  padding: 5%;
-  margin: 10%;
-  border-radius: 10px;
-  background-color: #fff;
-}
-​
-.section:hover h2 {
-  background-color: #fff;
-}
-​
-/*--- styling the header "about me" to be at the top ---
---- if you want the header to be "sticky" and not scroll, use position:fixed ---
-.header {
-  z-index: 1; --- makes it so it will be above any overlapping elements (bigger number = front) ---
-  padding-top: 10px;
-  letter-spacing: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 15%;
-  border-bottom: 5px solid #6e85b7;
-  text-align: center;
-  -webkit-transition: 0.5s linear all;
-  transition: 0.5s linear all;
-}
-​
-.header:hover {
-  color: #6e85b7;
-}
-
-*/
-
 
 #container {
     margin-left: auto;
@@ -87,7 +52,6 @@ body {
 
 .project-image-wrapper img{
   border: 2px solid moccasin;
- /* border-radius: 100%;*/
   margin: 5px;
   padding: 5px;
   width:300px;
@@ -99,10 +63,7 @@ body {
   visibility: none; opacity: 0;
   transition: opacity 0.3s;
 }
-/*i{
-  position:absolute;
-  bottom:0; left: 0;
-} */
+
 
 .project-image-wrapper:hover i {
   visibility: visible; opacity: 1;
