@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Rebecca Wu </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="random.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <section class = "navigation">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="home.html">
+            <img src="images/logo.png">
+          </a>
+        </div>
+        <div class="navbar-end">
+          <a class="navbar-item" href="home.html"> Home </a>
+          <a class="navbar-item" href="about.html"> About </a>
+          <!-- Projects Dropdown-->
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> Projects </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="couch.html">
+                  Wooden Couch
+                </a>
+                <a class="navbar-item" href="thor.html">
+                  Mjolnir
+                </a>
+                <a class="navbar-item" href="cars.html">
+                  Cars/Boats
+                </a>
+                <a class="navbar-item" href="random.html">
+                  Random Pictures
+                </a>
+              </div>
+          </div>
+          <a class="navbar-item"> Contact </a>
+        </div>
+      </nav>
+    </section> 
+
+    <section class="randomTitle"> 
+        <h1 class="title is-2"> Random Pictures </h1>
+        <h4 class="subtitle is-5"> Click on the buttons below to be 
+        presented with a random woodworking picture and a short description 
+        of what it is! 
+        </h4>  
+        <br>
+    </section>
+
+    <!-- Random Pictures-->
+    <section>
+        <div class="columns is-centered is-variable is-5">
+            <!-- First Column -->
+            <div class="column is-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image">
+                            <img id="results-img" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="title is-4" id="results-name"></p>
+                            <p class="subtitle is-6" id="results-text"></p>
+                            <div class="rollButton">
+                                <button class="button is-primary is-light roll-button" onclick="doRoll()">Roll </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Column -->
+            <div class="column is-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image">
+                            <img id="results-img2" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="title is-4" id="results-name2"></p>
+                            <p class="subtitle is-6" id="results-text2"></p>
+                            <div class="rollButton2">
+                                <button class="button is-primary is-light roll-button" onclick="doRoll2()"> Roll
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Column -->
+            <div class="column is-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image">
+                            <img id="results-img3" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="title is-4" id="results-name3"></p>
+                            <p class="subtitle is-6" id="results-text3"></p>
+                            <div class="rollButton2">
+                                <button class="button is-primary is-light roll-button" onclick="doRoll3()"> Roll
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </section>
+
+    <script src="random.js" defer></script>
