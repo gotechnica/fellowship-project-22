@@ -95,7 +95,7 @@ body {
 
 }
 
-i{
+.projects-grid i{
   visibility: none; opacity: 0;
   transition: opacity 0.3s;
 }
@@ -128,13 +128,17 @@ i{
 .tabs .first {
 border: 1px solid #654321;
 margin: 3px;
-color: darkgreen;
+color: moccasin;
+font-weight: 700;
+background-color: #f5b477;
 }
 
 .tabs .second {
   border: 1px solid #654321;
   margin: 3px;
-  color: darkgreen;
+  color: moccasin;
+  font-weight: 700;
+  background-color: #f5b477;
 }
 
 #container:hover{
@@ -171,3 +175,6 @@ h2 {
   50% { border-color: orange; }
 }
 
+.fa{
+  color: white;
+}
