@@ -6,38 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <title>art</title>
 </head>
 
 <body>
     <main>
-
-        <div class="header">
+        <div class="headerContainer">
             <a class="home" href="index.html">C</a>
-            <a href="resume.html">
-                <div class="tab">
-                    photography </div>
-            </a>
-            <a href="graphicDesign.html">
-                <div class="tab">
-                    ui/ux
-                </div>
-            </a>
-            <a href="art.html">
-                <div class="tab">
-                    art</div>
-            </a>
+            <div class="header">
+                <a href="resume.html">
+                    <div class="tab">
+                        photography </div>
+                </a>
+                <a href="ui.html">
+                    <div class="tab">
+                        ui/ux
+                    </div>
+                </a>
+                <a href="art.html">
+                    <div class="tab">
+                        art</div>
+                </a>
+            </div>
         </div>
 
         <h2 id="artPageHeader">Artwork</h2>
+
         <div class="artTypeButtonContainer">
             <button class="artTypeButton" type="button"
                 onClick="document.getElementById('paintings').scrollIntoView();">paintings</button>
-            <button class=" artTypeButton" type="button"
+            <button class=" artTypeButton" id="mainArtTypeButton" type="button"
                 onClick="document.getElementById('digital').scrollIntoView();">digital</button>
-            <button class="artTypeButton" type="button" onclick="showType('design',this)">graphic art</button>
+            <button class="artTypeButton" type="button"
+                onClick="document.getElementById('graphicArt').scrollIntoView();">graphic art</button>
         </div>
+
+        <image class="centeredIcon bounce" src="icons/downIcon.png"
+            onclick="document.getElementById('pantings').scrollIntoView();"></image>
         <h3 class="artTypeHeader" id="paintings">paintings</h3>
         <hr class="artHeaderLine">
         <h4 class="info">click each piece for more info</h4>
@@ -122,43 +128,10 @@
                 <div class="artFooter">foot</div>
         </div>
 
-        <script>function openPage(pageName, element) {
-                // Hide all elements with class="imageGrid" by default */
-                var i, imageGrid, pageHeader, backButton;
-                imageGrid = document.getElementsByClassName("imageGrid");
-                dynamicGrid = document.getElementsByClassName("dynamicGrid");
-                artTypeHeader = document.getElementsByClassName("artTypeHeader");
-                artTypeButton = document.getElementsByClassName("artTypeButton");
-                info = document.getElementsByClassName("info");
-                for (i = 0; i < imageGrid.length; i++) {
-                    imageGrid[i].style.display = "none";
-                }
-                for (i = 0; i < dynamicGrid.length; i++) {
-                    dynamicGrid[i].style.display = "none";
-                }
-                for (i = 0; i < artTypeHeader.length; i++) {
-                    artTypeHeader[i].style.display = "none";
-                }
-                for (i = 0; i < info.length; i++) {
-                    info[i].style.display = "none";
-                }
-                for (i = 0; i < artTypeButton.length; i++) {
-                    artTypeButton[i].style.display = "none";
-                }
-                pageHeader = document.getElementById("artPageHeader");
-                pageHeader.style.display = "none";
-
-
-                // Show the specific tab content
-                document.getElementById(pageName).style.display = "block";
-            }
-
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();</script>
-
         <h3 class="artTypeHeader" id="digital">digital</h2>
             <hr class="artHeaderLine">
-
+            <p class="artTypeDescription">I create my digital art using Procreate. Digital art is more versatile in the
+                types of brush strokes and textures I can create.</p>
 
             <div class="dynamicGrid">
                 <div class="dynamicGridColumn">
@@ -190,7 +163,7 @@
                 </div>
             </div>
 
-            <h3 class="artTypeHeader" id="digital">graphic art</h2>
+            <h3 class="artTypeHeader" id="graphicArt">graphic art</h2>
                 <hr class="artHeaderLine">
 
                 <div class="artTypeButtonContainer">
@@ -198,29 +171,6 @@
                     <button class=" artTypeButton" type="button" onclick="showType('nft',this)">NFT art</button>
                     <button class="artTypeButton" type="button" onclick="showType('other',this)">other</button>
                 </div>
-
-
-                <script>function showType(type, element) {
-                        var sticker, nft, other, shown;
-                        sticker = document.getElementsByClassName("sticker");
-                        nft = document.getElementsByClassName("nft");
-                        other = document.getElementsByClassName("other");
-                        for (i = 0; i < sticker.length; i++) {
-                            sticker[i].style.display = "none";
-                        }
-                        for (i = 0; i < nft.length; i++) {
-                            nft[i].style.display = "none";
-                        }
-                        for (i = 0; i < other.length; i++) {
-                            other[i].style.display = "none";
-                        }
-                        shown = document.getElementsByClassName(type);
-                        for (i = 0; i < shown.length; i++) {
-                            shown[i].style.display = "block";
-                        }
-
-                        console.log(type + "clicked");
-                    }</script>
 
                 <div class="dynamicGrid">
                     <div class="dynamicGridColumn">
