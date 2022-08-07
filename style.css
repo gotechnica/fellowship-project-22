@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta+Malar&display=swap");
+
+body {
+  background-image:url("infinite diabolo banner.png");
+  text-align: center;
+  color: mediumvioletred;
+}
+.intro {
+	text-align: center;
+}
+
+.intro-list {
+	color: white;
+}
+
+.intro ul li {
+	background: black;
+	color: white;
+	display: inline-block;
+	list-style-type: none;
+	padding: 10px;
+}
+
+
+.intro ul li a {
+	color: white;
+}
+
+.tabs{
+    text-align: center;
+}
+
+.tabs-list{
+    color: orange;
+}
+
+a{
+    background-color: pink;
+    -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+
+}
+
+/*css formatting
+/* apply a google font from fonts.google.com */
+/* let us know if you want to learn to do this (or anything else in CSS) */
+
+​
+/* generic styling */
+body {
+  font-family: "Mukta Malar", sans-serif;
+  background-color: #eee;
+}
+​
+h1 {
+  font-family: "Bebas Neue", cursive;
+}
+​
+h2 {
+  letter-spacing: 2px;
+  color: #000;
+  border-bottom: 1px solid #6e85b7;
+}
+​
+a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: #6e85b7;
+  border-bottom: 2px solid transparent;
+  /* the below two lines will make any transitions/changes slow and smooth */
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
+​
+a:hover { /* when a link is hovered, it will change color and border smoothly */
+  color: #000;
+  border-bottom: 2px solid #6e85b7;
+}
+​
+.emphasis { /* anything with the emphasis class will be bold */
+  font-weight: bolder;
+}
+​
+/* setting up the container in the center to hold the sections */
+#container {
+  /* setting auto margins on a relatively positioned div will center it */
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  width: 75%;
+}
+​
+/* styling each section (boxes inside the container) */
+.section {
+  z-index: 0;
+  border: 1px solid #777;
+  padding: 5%;
+  margin: 10%;
+  border-radius: 10px;
+  background-color: #fff;
+}
+​
+.section:hover h2 {
+  background-color: #fff;
+}
+​
+/* styling the header "about me" to be at the top */
+/* if you want the header to be "sticky" and not scroll, use position:fixed */
+.header {
+  z-index: 1; /* makes it so it will be above any overlapping elements (bigger number = front) */
+  padding-top: 10px;
+  letter-spacing: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  border-bottom: 5px solid #6e85b7;
+  text-align: center;
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
+​
+.header:hover {
+  color: #6e85b7;
+}
