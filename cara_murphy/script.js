@@ -23,7 +23,9 @@ function openPage(pageName, element) {
     dynamicGrid = document.getElementsByClassName("dynamicGrid");
     artTypeHeader = document.getElementsByClassName("artTypeHeader");
     artTypeButton = document.getElementsByClassName("artTypeButton");
+    centeredIcon = document.getElementsByClassName("centeredIcon");
     info = document.getElementsByClassName("info");
+    artTypeDescription = document.getElementsByClassName("artTypeDescription");
     for (i = 0; i < imageGrid.length; i++) {
         imageGrid[i].style.display = "none";
     }
@@ -38,6 +40,12 @@ function openPage(pageName, element) {
     }
     for (i = 0; i < artTypeButton.length; i++) {
         artTypeButton[i].style.display = "none";
+    }
+    for (i = 0; i < centeredIcon.length; i++) {
+        centeredIcon[i].style.display = "none";
+    }
+    for (i = 0; i < artTypeDescription.length; i++) {
+        artTypeDescription[i].style.display = "none";
     }
     pageHeader = document.getElementById("artPageHeader");
     pageHeader.style.display = "none";
@@ -54,17 +62,20 @@ function openAppPage(pageName, element) {
     var i, appContainer, pageInfo, backButton;
     appContainer = document.getElementsByClassName("appContainer");
     pageInfo = document.getElementsByClassName("pageInfo");
+    pageHeader = document.getElementsByClassName("pageHeader");
     for (i = 0; i < appContainer.length; i++) {
         appContainer[i].style.display = "none";
     }
     for (i = 0; i < pageInfo.length; i++) {
         pageInfo[i].style.display = "none";
     }
+    for (i = 0; i < pageHeader.length; i++) {
+        pageHeader[i].style.display = "none";
+    }
+
 
     document.getElementById(pageName).style.display = "block";
 }
-
-
 
 
 
