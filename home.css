@@ -1,0 +1,27 @@
+.navigation{ 
+    margin: 25px; 
+}
+
+.hero{ 
+    margin: 75px; 
+}
+
+.projects{
+    margin: 75px; 
+}
+
+#mainName{ 
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 100px;
+}
+
+#mainNameDescription{ 
+    font-size: 25px;
+}
+
+.footerContainer{ 
+    margin-right: 100px; 
+    margin-left: 100px; 
+    margin-bottom: 50px; 
+    margin-top: 30px;
+}

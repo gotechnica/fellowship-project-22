@@ -1,0 +1,39 @@
+.navigation{ 
+    margin: 25px; 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 15px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    margin-bottom: 15px; 
+    vertical-align: middle;
+  }
+
+  #imageGallery{ 
+    display: flex; 
+    justify-content: center; 
+  }
+
+  .hero-body{ 
+    margin-left: 100px; 
+    margin-right: 100px; 
+  }
+
+  .footerContainer{ 
+    margin-right: 100px; 
+    margin-left: 100px; 
+    margin-bottom: 50px; 
+    margin-top: 30px;
+}
+
