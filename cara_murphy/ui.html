@@ -15,9 +15,9 @@
         <div class="headerContainer">
             <a class="home" href="index.html">C</a>
             <div class="header">
-                <a href="resume.html">
+                <a href="index.html">
                     <div class="tab">
-                        photography </div>
+                        HOME</div>
                 </a>
                 <a href="ui.html">
                     <div class="tab">
@@ -47,6 +47,11 @@
                         Mobile app designed to connect the homeless with nearby shelters and resources.
                         <image class="rightArrowIcon bounceX" src="icons/rightArrow.png"></image>
                     </div>
+                    <div class="tags-container">
+                        <div class="tag">mobile-app</div>
+                        <div class="tag">user interface</div>
+
+                    </div>
                 </div>
             </div>
             <div class="appContainer" onclick="openAppPage('stem',this)">
@@ -59,10 +64,15 @@
                         from the phone's camera and an algorithm to detect and warn of upcoming obstacles.
                         <image class="rightArrowIcon bounceX" src="icons/rightArrow.png"></image>
                     </div>
+                    <div class="tags-container">
+                        <div class="tag">mobile-app</div>
+                        <div class="tag">user experience</div>
+                        <div class="tag">algorithms</div>
+                    </div>
                 </div>
 
             </div>
-            <div class="appContainer">
+            <div class="appContainer" onclick="openAppPage('sola',this)">
                 <div class="appInfoContainer">
                     <image class="appImage" src="technovationUI/technovation.PNG"></image>
                     <h3 class="appHeader">Sola</h3>
@@ -71,33 +81,30 @@
                         organization.
                         <image class="rightArrowIcon bounceX" src="icons/rightArrow.png"></image>
                     </div>
+                    <div class="tags-container">
+                        <div class="tag">mobile-app</div>
+                    </div>
                 </div>
 
             </div>
         </div>
 
         <div id="afg">
-            <h3>HomeWards</h3>
+            <h3>HOMEWARDS</h3>
             <div class="appPageContainer">
                 <div class="UIImageGrid">
-                    <image class="UIImage" src="AFGUI/Search.png">
-                        <image class="UIImage" src="AFGUI/MapSearch.png">
-                            <image class="UIImage" src="AFGUI/ViewShelter.png">
+                    <div class="UIImageColumn">
+                        <image class="UIImage" src="AFGUI/Search.png">
+                            <image class="UIImage" src="AFGUI/MapSearch.png">
+                    </div>
+                    <div class="UIImageColumn">
+                        <image class="UIImage" src="AFGUI/ViewShelter.png">
+                            <image class="UIImage" src="AFGUI/Claim.png">
+                    </div>
                 </div>
                 <div class="appDescriptionContainer">
                     <p class="artDescription">
-                        <b>title:</b> flutist
-                        <br>
-                        <b>date:</b> 2022
-                        <br>
-                        <b>medium:</b> acrylic
-                        <br>
-                        <br>
-                        This piece was inspired by my experience as a flutist. My teacher often encouraged
-                        me to
-                        project the "calm blue of the ocean" or play sharply like scraping a knife across
-                        burnt
-                        toast.
+                        Information coming soon!
                     </p>
                 </div>
             </div>
@@ -108,47 +115,63 @@
         </div>
 
         <div id="stem">
-            <h3>Navigation App for Blind Client</h3>
+            <h3>NAVIGATION APP FOR BLIND CLIENT</h3>
             <div class="appPageContainer">
                 <div class="UIImageGrid">
                     <div class="UIImageColumn">
-                        <image class="UIImage" src="STEMUI/STEM2UI.png" width="50%"></image>
-                        <image class="UIImage" src="STEMUI/STEM2CAD.png"></image>
+                        <div class="UIImageContainer">
+                            <image class="UIImage" src="STEMUI/STEM2UI.png" width="50%"></image>
+                            <div class=UIImageDescription>The landing page of the application. A large button to start
+                                the guiding process is presented and speaks when pressed. Press again to stop.</div>
+                        </div>
+                        <div class="UIImageContainer">
+                            <image class="UIImage" src="STEMUI/STEM2CAD.png"></image>
+                            <div class=UIImageDescription>The CAD blueprint of our device used to attach the user's
+                                phone to the cane. </div>
+                        </div>
                     </div>
                     <div class="UIImageColumn">
-                        <image class="UIImage" src="STEMUI//stem2photo.jpg"></image>
-                        <image class="UIImage" src="STEMUI/3.png"></image>
+                        <div class="UIImageContainer">
+                            <image class="UIImage" src="STEMUI//stem2photo.jpg"></image>
+                            <div class=UIImageDescription>Photo of intended use. </div>
+                        </div>
+                        <div class="UIImageContainer">
+                            <image class="UIImage" src="STEMUI/3.png"></image>
+                            <div class=UIImageDescription>How our algorithm would analyze camera feedback. </div>
+                        </div>
                     </div>
 
                 </div>
                 <div class="appDescriptionContainer">
                     <p class="artDescription">
-                        A custom app for a blind client as a navigation guide for a low cost. To develop an
-                        interface for this
-                        app, I had to focus heavily on the user experience, to ensure our client would be able to use
-                        the app on his own. <br><br>
+                        This custom app was developed for a blind client as a navigation guide for a low cost. Along
+                        with three others, I worked with the client to test and update our algorithm and interface
+                        over
+                        the course of a year.
 
-                        Pictured on the right is how we intended the app to be used. A 3D attachment attaches his phone
-                        with our app running to the white cane and scans the area ahead for obstacles.
+                        <br><br>
+                        As part of my group, I spearheaded the development of the user interface and initiated the
+                        integration of Python into our application based in Android Studio.
+                        Developing the user interface was a challenge as the focus was entirely on user experience
+                        rather than appearance. <br><br>
                     </p>
                 </div>
+
             </div>
             <a href="ui.html">
                 <button class="backAppButton" type="button">ALL PROJECTS</button></a>
         </div>
-        </div>
+
 
         <div id="sola">
-            <h3>Sola</h3>
+            <h3>SOLA</h3>
             <div class="appPageContainer">
                 <div class="UIImageGrid">
-                    <image class="UIImage" src="STEMUI/STEM2UI.png"></image>
-                    <image class="UIImage" src="STEMUI//stem2photo.jpg"></image>
-                    <image class="UIImage" src="STEMUI/STEM2CAD.png"></image>
-                    <image class="UIImage" src="STEMUI/1.png"></image>
+
                 </div>
                 <div class="appDescriptionContainer">
                     <p class="artDescription">
+                        Information coming soon!
                     </p>
                 </div>
             </div>

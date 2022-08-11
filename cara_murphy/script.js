@@ -24,6 +24,7 @@ function openPage(pageName, element) {
     artTypeHeader = document.getElementsByClassName("artTypeHeader");
     artTypeButton = document.getElementsByClassName("artTypeButton");
     centeredIcon = document.getElementsByClassName("centeredIcon");
+    artHeaderLine = document.getElementsByClassName("artHeaderLine");
     info = document.getElementsByClassName("info");
     artTypeDescription = document.getElementsByClassName("artTypeDescription");
     for (i = 0; i < imageGrid.length; i++) {
@@ -47,8 +48,12 @@ function openPage(pageName, element) {
     for (i = 0; i < artTypeDescription.length; i++) {
         artTypeDescription[i].style.display = "none";
     }
+    for (i = 0; i < artHeaderLine.length; i++) {
+        artHeaderLine[i].style.display = "none";
+    }
     pageHeader = document.getElementById("artPageHeader");
     pageHeader.style.display = "none";
+    window.scrollTo(0, 0);
 
 
     // Show the specific tab content

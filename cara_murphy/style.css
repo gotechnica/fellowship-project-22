@@ -13,6 +13,7 @@ body {
     color: #0d3c5b;
     font-size: 5vw;
     float: left;
+    margin-left: 0.75vw;
     font-weight: bold;
     font-family: "Times New Roman";
 }
@@ -40,6 +41,27 @@ body {
     margin-left: 0.5em;
     margin-top: -1.5em;
     margin-left: 1vw;
+    margin-bottom: 3vw;
+}
+
+#speech-bubble {
+    width: 30%;
+    height: 20%;
+    position: relative;
+    margin-left: -8vw;
+    margin-bottom: -4vw;
+    animation: 0.8s ease-out 0s 1 appearLate;
+}
+
+
+#speech-bubble-text {
+    color: white;
+    position: absolute;
+    margin-left: -6.5vw;
+    margin-top: 1.8vw;
+    font-size: 1.8vw;
+    letter-spacing: 0.08rem;
+    animation: 1s ease-out 0s 1 appearLate;
 }
 
 .aboutText {
@@ -53,9 +75,6 @@ h1 {
     color: #0d3c5b;
     letter-spacing: 0.3rem;
     font-weight: 900;
-    /*webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background: radial-gradient(whitesmoke, #0d3c5b);*/
 }
 
 
@@ -111,6 +130,9 @@ h1 {
     letter-spacing: 0.2rem;
 }
 
+.home-tab {
+    animation: 1s ease-out 0s 1 slideDown;
+}
 
 a {
     text-decoration: none;
@@ -139,6 +161,7 @@ p {
     width: fit-content;
     color: whitesmoke;
     border-radius: 1vw 1vw 0vw 0vw;
+    animation: 3s ease-out 0s 1 slideUp;
 }
 
 .quickButtonsContainer {
@@ -146,18 +169,109 @@ p {
     flex-direction: row;
     justify-content: start;
     margin-left: 1vw;
+    height: 5.5vw;
+}
+
+@keyframes widthAppears {
+    0% {
+        width: 0vw;
+        height: 5.5vw;
+        opacity: 0;
+    }
+
+    45% {
+        width: 0vw;
+        height: 5.5vw;
+        opacity: 0;
+    }
+
+    47% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 30vw;
+        height: 5.5vw;
+    }
+}
+
+@keyframes appearLate {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    72% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideUp {
+    0% {
+        display: none;
+        transform: translateY(2.5vw);
+        opacity: 0;
+        color: #0d3c5b;
+    }
+
+
+    40% {
+        transform: translateY(2vw);
+        color: #0d3c5b;
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(1.5vw);
+        color: #0d3c5b;
+        opacity: 1;
+    }
+
+    80% {
+        color: #0d3c5b;
+    }
+
+    100% {
+        transform: translateY(0);
+        color: white;
+    }
+}
+
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-5vw);
+    }
+
+    90% {
+        transform: translateY(0.1vw);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .quickButton {
+    width: 9.5vw;
+    height: 5.5vw;
     border-style: none;
     background-color: #0d3c5b;
     color: white;
+    animation: 3.8s ease-out 0s 1 appearLate;
 }
 
 .quickButtonsBar {
     background-color: #0d3c5b;
     padding: 0vw 1vw 0vw 1vw;
     border-radius: 0vw 1vw 1vw 1vw;
+    animation: 2.3s ease-out 0s 1 widthAppears;
+    width: 30vw;
 }
 
 
@@ -274,6 +388,12 @@ h2 {
     margin-bottom: 2%;
 }
 
+.art-line {
+    border: 0.1em solid #0d3c5b;
+    width: 30%;
+    margin-bottom: 2%;
+}
+
 .artDescriptionContainer {
     background-color: #0d3c5b;
     width: 43%;
@@ -297,7 +417,7 @@ h2 {
     background-color: whitesmoke;
     color: whitesmoke;
     height: 100%;
-    margin-top: 60%;
+    margin-top: 30%;
 }
 
 .darkParagraph {
@@ -309,11 +429,12 @@ h3 {
     color: #0d3c5b;
     display: flex;
     justify-content: center;
-    font-size: 2.1vw;
+    font-size: 2.5vw;
 }
 
 .artTypeHeader {
     margin-top: 10vw;
+    margin-bottom: 1vw;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -517,15 +638,17 @@ ui.html*/
 }
 
 .appHeader {
-    background: white;
+    background: #0d3c5b;
     width: 20%;
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
     border-style: outset;
     border-width: 0.5vw;
+    border-radius: 0.5vw;
     border-color: #0d3c5b;
     font-size: 1.7vw;
     position: absolute;
+    color: white;
 }
 
 .appInfoContainer {
@@ -537,7 +660,7 @@ ui.html*/
 .appInfo {
     margin: 0vw 1.5vw 1.5vw 1.5vw;
     font-size: 1.1vw;
-    color: #8ec0e0;
+    color: #acd5ee;
     letter-spacing: 0.1rem;
     text-align: center;
 }
@@ -613,11 +736,42 @@ ui.html*/
     margin-right: 0.5vw;
 }
 
+.UIImageContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .UIImage {
     width: 100%;
     margin-right: 0.5vw;
     margin-bottom: 1vw;
+    position: relative;
 }
+
+.UIImageDescription {
+    position: absolute;
+    width: 18%;
+    height: auto;
+    display: none;
+    padding: 1vw;
+    font-weight: 600;
+    font-size: 1.1vw;
+    color: #0d3c5b;
+    background-color: white;
+    text-align: center;
+}
+
+.UIImageContainer:hover .UIImageDescription {
+    display: block;
+}
+
+.UIImageContainer:hover .UIImage {
+    opacity: 0.7;
+}
+
 
 .backAppButton {
     width: 15vw;
@@ -635,7 +789,30 @@ ui.html*/
     padding: 1vw;
 }
 
+.single-art-container {
+    text-align: center;
+}
+
+.backArtAppButton {
+    width: 15vw;
+    margin-top: 5vw;
+    display: inline-block;
+    background-color: white;
+    border-style: solid;
+    border-color: #0d3c5b;
+    border-width: 0.3vw;
+    color: #0d3c5b;
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 1vw;
+}
+
 .backAppButton:hover {
+    background-color: #0d3c5b;
+    color: white;
+}
+
+.backArtAppButton:hover {
     background-color: #0d3c5b;
     color: white;
 }
@@ -650,4 +827,26 @@ ui.html*/
 
 #sola {
     display: none;
+}
+
+.tags-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tag-divider {
+    border: 0.1vw solid #3277a5;
+    width: 100%;
+    margin-bottom: 2vw;
+}
+
+.tag {
+    background-color: #3277a5;
+    color: white;
+    font-size: 1vw;
+    padding: 0.3vw;
+    border-radius: 0.3vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 1vw;
 }
