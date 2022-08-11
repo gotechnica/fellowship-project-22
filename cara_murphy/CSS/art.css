@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+#artPageHeader {
+    margin-top: 10vw;
+    letter-spacing: 0.3rem;
+}
+
+.art-image-grid {
+    grid-template-columns: auto auto auto;
+    gap: 0.5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.art-grid-item {
+    float: left;
+    width: 30%;
+    margin-left: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.art-image-grid-item {
+    width: 100%;
+    float: left;
+}
+
+.art-title-text:hover .art-image-grid-item {
+    opacity: 0.6;
+}
+
+.art-image-grid-item:hover {
+    opacity: 0.6;
+}
+
+.art-grid-item:hover .art-title-text {
+    opacity: 1;
+}
+
+.art-image-grid-item:hover .art-title-text {
+    opacity: 1;
+}
+
+.art-title-text:hover {
+    opacity: 1;
+}
+
+.art-title-text {
+    padding: 0.5vw;
+    opacity: 0;
+    width: 100%;
+    float: left;
+    background-color: #0d3c5b;
+    color: white;
+    font-size: 1.3vw;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    margin-top: -18vw;
+    margin-left: 10vw;
+    letter-spacing: 0.1rem;
+
+}
+
+#flutist {
+    display: none;
+}
+
+#lucidity {
+    display: none;
+}
+
+#utopia {
+    display: none;
+}
+
+.singleImage {
+    width: 43%;
+    margin-left: 5%;
+    float: left;
+}
+
+.singleArtHeader {
+    font-size: 4vw;
+    color: #0d3c5b;
+}
+
+.artHeaderLine {
+    border: 0.1em solid #0d3c5b;
+    width: 30%;
+    margin-bottom: 2%;
+}
+
+.art-line {
+    border: 0.1em solid #0d3c5b;
+    width: 30%;
+    margin-bottom: 2%;
+}
+
+.artDescriptionContainer {
+    background-color: #0d3c5b;
+    width: 43%;
+    float: right;
+    margin-right: 5%;
+    margin-top: 0%;
+}
+
+.artDescription {
+    margin: 1em;
+    font-size: 1.5vw;
+    line-height: 2;
+    color: white;
+}
+
+.artFooter {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    color: whitesmoke;
+    height: 100%;
+    margin-top: 30%;
+}
+
+
+.artTypeHeader {
+    margin-top: 10vw;
+    margin-bottom: 1vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    letter-spacing: 0.3rem;
+}
+
+.artTypeDescription {
+    color: #0d3c5b;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 1.4vw;
+}
+
+.dynamicGrid {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.dynamicGridColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 30%;
+    margin-left: 3vw;
+}
+
+.info {
+    text-align: center;
+    margin: auto;
+    margin-top: -0.5vw;
+    margin-bottom: 1vw;
+    font-size: 1.2vw;
+}
+
+.artTypeButtonContainer {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2vw;
+}
+
+.artTypeButton {
+    width: 14vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-color: #0d3c5b;
+    border-width: 0.3vw;
+    color: #0d3c5b;
+    font-size: 1.6vw;
+    font-weight: 550;
+    padding: 1vw;
+}
+
+#mainArtTypeButton {
+    margin-bottom: 5vw;
+}
+
+.artTypeButton:hover {
+    background-color: #0d3c5b;
+    color: whitesmoke;
+}
+
+.centeredIcon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: linear;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-1vw);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bounceX {
+    animation-name: bounceX;
+    animation-timing-function: linear;
+}
+
+@keyframes bounceX {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(0.5vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.portrait {
+    width: 100%;
+    margin-bottom: 3vw;
+    display: block;
+}
+
+.nft {
+    width: 100%;
+    margin-bottom: 3vw;
+    display: block;
+}
+
+.design {
+    width: 100%;
+    margin-bottom: 3vw;
+    display: block;
+}
+
+.sticker {
+    margin-bottom: 3vw;
+}
+
+.other {
+    margin-bottom: 3vw;
+}
+
+.single-art-container {
+    text-align: center;
+}
+
+.backArtAppButton {
+    width: 15vw;
+    margin-top: 5vw;
+    display: inline-block;
+    background-color: white;
+    border-style: solid;
+    border-color: #0d3c5b;
+    border-width: 0.3vw;
+    color: #0d3c5b;
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 1vw;
+}
+
+.backArtAppButton:hover {
+    background-color: #0d3c5b;
+    color: white;
+}

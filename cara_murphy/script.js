@@ -19,7 +19,7 @@ submitButton.addEventListener('click', clickListener);
 function openPage(pageName, element) {
     // Hide all elements with class="imageGrid" by default */
     var i, imageGrid, pageHeader, backButton;
-    imageGrid = document.getElementsByClassName("imageGrid");
+    imageGrid = document.getElementsByClassName("art-image-grid");
     dynamicGrid = document.getElementsByClassName("dynamicGrid");
     artTypeHeader = document.getElementsByClassName("artTypeHeader");
     artTypeButton = document.getElementsByClassName("artTypeButton");

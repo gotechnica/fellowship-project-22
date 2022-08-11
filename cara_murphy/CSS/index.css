@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+.aboutBox {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4vw;
+    margin-left: 5em;
+    margin-top: 3vw;
+}
+
+#aboutMe {
+    color: #0d3c5b;
+    margin-left: 0.5em;
+    margin-top: -1.5em;
+    margin-left: 1vw;
+    margin-bottom: 3vw;
+}
+
+#speech-bubble {
+    width: 30%;
+    height: 20%;
+    position: relative;
+    margin-left: -8vw;
+    margin-bottom: -4vw;
+    animation: 0.8s ease-out 0s 1 appearLate;
+}
+
+#speech-bubble-text {
+    color: white;
+    position: absolute;
+    margin-left: -6.5vw;
+    margin-top: 1.8vw;
+    font-size: 1.8vw;
+    letter-spacing: 0.08rem;
+    animation: 1s ease-out 0s 1 appearLate;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0vw;
+}
+
+h1 {
+    font-size: 6.5vw;
+    color: #0d3c5b;
+    letter-spacing: 0.3rem;
+    font-weight: 900;
+}
+
+.highlighted {
+    color: #05568d;
+    font-weight: 600;
+}
+
+.aboutPhoto {
+    width: 30%;
+    height: 100%;
+    border-style: none;
+}
+
+.name {
+    font-size: 3vw;
+    color: #0d3c5b;
+    margin-top: 10%;
+    margin-left: 8%;
+}
+
+.home-tab {
+    animation: 1s ease-out 0s 1 slideDown;
+}
+
+.greetBar {
+    margin-left: 1vw;
+    background-color: #0d3c5b;
+    font-size: 1.4vw;
+    padding: 0.5vw 1vw 0vw 1vw;
+    width: fit-content;
+    color: whitesmoke;
+    border-radius: 1vw 1vw 0vw 0vw;
+    animation: 3s ease-out 0s 1 slideUp;
+}
+
+.quickButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-left: 1vw;
+    height: 5.5vw;
+}
+
+@keyframes widthAppears {
+    0% {
+        width: 0vw;
+        height: 5.5vw;
+        opacity: 0;
+    }
+
+    45% {
+        width: 0vw;
+        height: 5.5vw;
+        opacity: 0;
+    }
+
+    47% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 30vw;
+        height: 5.5vw;
+    }
+}
+
+@keyframes appearLate {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    72% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        display: none;
+        transform: translateY(2.5vw);
+        opacity: 0;
+        color: #0d3c5b;
+    }
+
+    40% {
+        transform: translateY(2vw);
+        color: #0d3c5b;
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(1.5vw);
+        color: #0d3c5b;
+        opacity: 1;
+    }
+
+    80% {
+        color: #0d3c5b;
+    }
+
+    100% {
+        transform: translateY(0);
+        color: white;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-5vw);
+    }
+
+    90% {
+        transform: translateY(0.1vw);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.quickButton {
+    width: 9.5vw;
+    height: 5.5vw;
+    border-style: none;
+    background-color: #0d3c5b;
+    color: white;
+    animation: 3.8s ease-out 0s 1 appearLate;
+}
+
+.quickButtonsBar {
+    background-color: #0d3c5b;
+    padding: 0vw 1vw 0vw 1vw;
+    border-radius: 0vw 1vw 1vw 1vw;
+    animation: 2.3s ease-out 0s 1 widthAppears;
+    width: 30vw;
+}
+
+.logo {
+    width: 3vw;
+    height: 3vw;
+    margin: 1vw 3vw 1vw 3vw;
+    background-color: #0d3c5b;
+}

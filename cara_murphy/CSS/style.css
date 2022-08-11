@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+}
+
+.home {
+    color: #0d3c5b;
+    font-size: 5vw;
+    float: left;
+    margin-left: 0.75vw;
+    font-weight: bold;
+    font-family: "Times New Roman";
+}
+
+.headerContainer {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5em;
+}
+
+.tab {
+    background-color: #0d3c5b;
+    text-align: center;
+    width: auto;
+    padding: 0.5em 1em;
+    margin: 1em;
+    float: left;
+    color: whitesmoke;
+    font-size: 1.4vw;
+    font-weight: 500;
+    border-radius: 0.5vw;
+    letter-spacing: 0.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #365475;
+}
+
+p {
+    color: #CBD2D8;
+}
+
+
+h2 {
+    margin: 2vw;
+    font-size: 4.6vw;
+    color: #0d3c5b;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    color: #0d3c5b;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5vw;
+}
+
+.pageHeader {
+    letter-spacing: 0.3rem;
+}
+
+h4 {
+    color: #0d3c5b;
+    font-size: 1vw;
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.contactBox {
+    display: flex;
+    padding: 1vw 10vw;
+    border-radius: 0%;
+    border-style: solid;
+    border-color: #0d3c5b;
+    border-width: 0.5vw;
+    font-size: 1vw;
+}
