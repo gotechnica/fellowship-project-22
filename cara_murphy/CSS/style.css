@@ -18,7 +18,7 @@ body {
     font-family: "Times New Roman";
 }
 
-.headerContainer {
+.header-container {
     width: 100%;
 }
 
@@ -67,7 +67,7 @@ h3 {
     font-size: 2.5vw;
 }
 
-.pageHeader {
+.page-header {
     letter-spacing: 0.3rem;
 }
 
@@ -76,12 +76,12 @@ h4 {
     font-size: 1vw;
 }
 
-.contactContainer {
+.contact-container {
     display: flex;
     justify-content: center;
 }
 
-.contactBox {
+.contact-box {
     display: flex;
     padding: 1vw 10vw;
     border-radius: 0%;

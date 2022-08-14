@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#artPageHeader {
+#art-page-header {
     margin-top: 10vw;
     letter-spacing: 0.3rem;
 }
@@ -75,18 +75,18 @@
     display: none;
 }
 
-.singleImage {
+.single-image {
     width: 43%;
     margin-left: 5%;
     float: left;
 }
 
-.singleArtHeader {
+.single-art-header {
     font-size: 4vw;
     color: #0d3c5b;
 }
 
-.artHeaderLine {
+.art-header-line {
     border: 0.1em solid #0d3c5b;
     width: 30%;
     margin-bottom: 2%;
@@ -98,7 +98,7 @@
     margin-bottom: 2%;
 }
 
-.artDescriptionContainer {
+.art-description-container {
     background-color: #0d3c5b;
     width: 43%;
     float: right;
@@ -106,14 +106,14 @@
     margin-top: 0%;
 }
 
-.artDescription {
+.art-description {
     margin: 1em;
     font-size: 1.5vw;
     line-height: 2;
     color: white;
 }
 
-.artFooter {
+.art-footer {
     position: relative;
     left: 0;
     right: 0;
@@ -125,7 +125,7 @@
 }
 
 
-.artTypeHeader {
+.art-type-header {
     margin-top: 10vw;
     margin-bottom: 1vw;
     text-align: center;
@@ -135,7 +135,7 @@
     letter-spacing: 0.3rem;
 }
 
-.artTypeDescription {
+.art-type-description {
     color: #0d3c5b;
     text-align: center;
     margin-left: auto;
@@ -144,14 +144,14 @@
     font-size: 1.4vw;
 }
 
-.dynamicGrid {
+.dynamic-grid {
     margin-left: 5vw;
     margin-right: 5vw;
     display: flex;
     justify-content: center;
 }
 
-.dynamicGridColumn {
+.dynamic-grid-column {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -167,13 +167,13 @@
     font-size: 1.2vw;
 }
 
-.artTypeButtonContainer {
+.art-type-button-container {
     text-align: center;
     margin: auto;
     margin-bottom: 2vw;
 }
 
-.artTypeButton {
+.art-type-button {
     width: 14vw;
     margin-left: 1vw;
     margin-right: 1vw;
@@ -187,16 +187,16 @@
     padding: 1vw;
 }
 
-#mainArtTypeButton {
+#main-art-type-button {
     margin-bottom: 5vw;
 }
 
-.artTypeButton:hover {
+.art-type-button:hover {
     background-color: #0d3c5b;
     color: whitesmoke;
 }
 
-.centeredIcon {
+.centered-icon {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -225,24 +225,6 @@
     }
 }
 
-.bounceX {
-    animation-name: bounceX;
-    animation-timing-function: linear;
-}
-
-@keyframes bounceX {
-    0% {
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(0.5vw);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
 
 .portrait {
     width: 100%;
@@ -274,7 +256,7 @@
     text-align: center;
 }
 
-.backArtAppButton {
+.back-art-app-button {
     width: 15vw;
     margin-top: 5vw;
     display: inline-block;
@@ -288,7 +270,7 @@
     padding: 1vw;
 }
 
-.backArtAppButton:hover {
+.back-art-app-button:hover {
     background-color: #0d3c5b;
     color: white;
 }

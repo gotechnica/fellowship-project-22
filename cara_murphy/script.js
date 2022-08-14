@@ -20,13 +20,13 @@ function openPage(pageName, element) {
     // Hide all elements with class="imageGrid" by default */
     var i, imageGrid, pageHeader, backButton;
     imageGrid = document.getElementsByClassName("art-image-grid");
-    dynamicGrid = document.getElementsByClassName("dynamicGrid");
-    artTypeHeader = document.getElementsByClassName("artTypeHeader");
-    artTypeButton = document.getElementsByClassName("artTypeButton");
-    centeredIcon = document.getElementsByClassName("centeredIcon");
-    artHeaderLine = document.getElementsByClassName("artHeaderLine");
+    dynamicGrid = document.getElementsByClassName("dynamic-grid");
+    artTypeHeader = document.getElementsByClassName("art-type-header");
+    artTypeButton = document.getElementsByClassName("art-type-button");
+    centeredIcon = document.getElementsByClassName("centered-icon");
+    artHeaderLine = document.getElementsByClassName("art-header-line");
     info = document.getElementsByClassName("info");
-    artTypeDescription = document.getElementsByClassName("artTypeDescription");
+    artTypeDescription = document.getElementsByClassName("art-type-description");
     for (i = 0; i < imageGrid.length; i++) {
         imageGrid[i].style.display = "none";
     }
@@ -51,7 +51,7 @@ function openPage(pageName, element) {
     for (i = 0; i < artHeaderLine.length; i++) {
         artHeaderLine[i].style.display = "none";
     }
-    pageHeader = document.getElementById("artPageHeader");
+    pageHeader = document.getElementById("art-page-header");
     pageHeader.style.display = "none";
     window.scrollTo(0, 0);
 
@@ -61,13 +61,13 @@ function openPage(pageName, element) {
 }
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+document.getElementById("default-open").click();
 
 function openAppPage(pageName, element) {
     var i, appContainer, pageInfo, backButton;
-    appContainer = document.getElementsByClassName("appContainer");
-    pageInfo = document.getElementsByClassName("pageInfo");
-    pageHeader = document.getElementsByClassName("pageHeader");
+    appContainer = document.getElementsByClassName("app-container");
+    pageInfo = document.getElementsByClassName("page-info");
+    pageHeader = document.getElementsByClassName("page-header");
     for (i = 0; i < appContainer.length; i++) {
         appContainer[i].style.display = "none";
     }
