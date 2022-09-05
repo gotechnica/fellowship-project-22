@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>mithra's photos</title>
+
+    <div id="header">
+      <h1 class="title">mithra sankar</h1>
+
+      <div class="nav">
+        <nav>
+          <ul>
+            <li><a href="home.html"> home</a></li>
+            <li><a href="index.html"> about me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </head>
+  <body>
+    <div class="homeTitle">
+      <h1>gallery</h1>
+      <h2>some of my photos --- click to enlarge!</h2>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img
+          src="images/indiaGate.jpg"
+          onclick="openLightbox();toSlide(1)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/reflection.jpg"
+          onclick="openLightbox();toSlide(5)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/prayag.jpg"
+          onclick="openLightbox();toSlide(9)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/rocksOnRocks.jpg"
+          onclick="openLightbox();toSlide(13)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/insideTrain.jpg"
+          onclick="openLightbox();toSlide(17)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/soloTree.jpg"
+          onclick="openLightbox();toSlide(21)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/anotherSeason.jpg"
+          onclick="openLightbox();toSlide(25)"
+          class="hover-shadow preview"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="images/blueberries.jpg"
+          onclick="openLightbox();toSlide(2)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/myWorld.jpg"
+          onclick="openLightbox();toSlide(6)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/greyscaleMahal.jpg"
+          onclick="openLightbox();toSlide(10)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/islandsFar.jpg"
+          onclick="openLightbox();toSlide(14)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/reservoir.jpg"
+          onclick="openLightbox();toSlide(18)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/theGates.jpg"
+          onclick="openLightbox();toSlide(22)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/firework.JPG"
+          onclick="openLightbox();toSlide(26)"
+          class="hover-shadow preview"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="images/nyc.jpg"
+          onclick="openLightbox();toSlide(3)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/viewFromAfar.jpg"
+          onclick="openLightbox();toSlide(7)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/philly.jpg"
+          onclick="openLightbox();toSlide(11)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/hawaMahal.jpg"
+          onclick="openLightbox();toSlide(15)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/phoneEatsFirst.jpg"
+          onclick="openLightbox();toSlide(19)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/girl'sSunset.jpg"
+          onclick="openLightbox();toSlide(23)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/delcastle.JPG"
+          onclick="openLightbox();toSlide(27)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/islands.jpg"
+          onclick="openLightbox();toSlide(29)"
+          class="hover-shadow preview"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="images/tajDistance.JPG"
+          onclick="openLightbox();toSlide(4)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/innocence.jpg"
+          onclick="openLightbox();toSlide(8)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/railroad.jpg"
+          onclick="openLightbox();toSlide(12)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/threeGirls.jpg"
+          onclick="openLightbox();toSlide(16)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/theirWindow.jpg"
+          onclick="openLightbox();toSlide(20)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/ourWindow.jpg"
+          onclick="openLightbox();toSlide(24)"
+          class="hover-shadow preview"
+        />
+        <img
+          src="images/contentMan.jpg"
+          onclick="openLightbox();toSlide(28)"
+          class="hover-shadow preview"
+        />
+      </div>
+    </div>
+    <div id="Lightbox" class="modal">
+      <span class="close pointer" onclick="closeLightbox()">&times;</span>
+      <div class="modal-content">
+        <div class="slide">
+          <img src="images/indiaGate.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/blueberries.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/nyc.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/tajDistance.JPG" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/reflection.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/myWorld.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/viewFromAfar.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/innocence.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/prayag.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/greyscaleMahal.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/philly.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/railroad.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/rocksOnRocks.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/islandsFar.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/hawaMahal.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/threeGirls.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/insideTrain.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/reservoir.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/phoneEatsFirst.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/theirWindow.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/soloTree.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/theGates.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/girl'sSunset.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/ourWindow.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/anotherSeason.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/firework.JPG" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/delcastle.JPG" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/contentMan.jpg" class="image-slide" />
+        </div>
+        <div class="slide">
+          <img src="images/islands.jpg" class="image-slide" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
